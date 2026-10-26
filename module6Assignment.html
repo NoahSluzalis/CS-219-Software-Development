@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <div style="text-align: center;">
+        <h1>Even or Odd Number Checker:</h1>
+    </div>
+
+    <div style="text-align: center;">
+        <input type="text" id="number" placeholder="Enter Number Here:">
+        <button  style = "background-color: green;" id = "button" type="button">Check Number</button>
+    </div>
+
+    <div style="text-align: center;">
+        
+    </div>
+
+    <div style="text-align: center;">
+        <p id="result"></p>
+    </div>
+
+    <script>
+        const button = document.getElementById("button");
+        const number = document.getElementById("number");
+        const result = document.getElementById("result");
+
+        button.addEventListener("click", function() {
+            let numberInput = Number(number.value);
+
+            if (numberInput === 0){
+                result.textContent = "This is Not a Valid Input."
+            }
+            else if (isNaN(numberInput)) {
+                result.textContent = "This is Not a Valid Input."
+            }
+            else if (numberInput % 2 === 0) {
+                result.textContent =  numberInput + " is Even."
+            }
+            else {
+                result.textContent = numberInput + " is Odd."
+            }
+        });
+
+
+    </script>
+</html> 

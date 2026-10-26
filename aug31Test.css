@@ -1,0 +1,13 @@
+h1{
+    text-indent: 50px;
+    word-spacing: 10px;
+}
+h2{
+    text-transform: lowercase;
+}
+h3{
+    text-transform: capitalize;
+}
+p{
+    text-decoration: overline underline;
+}
